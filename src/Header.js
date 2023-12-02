@@ -6,14 +6,14 @@ const Header = () => {
   return (
     <header className="header-container">
       <div className="logo-container">
-      <img src={GDSC_Symbol} alt="GDSC Symbol" style={{ marginLeft: "120px", marginTop: "29px", width: "45px", height: "21px", flexShrink: 0 }} />
-        <div className="header-gdsc">
+        <img src={GDSC_Symbol} alt="GDSC Symbol" style={{ marginLeft: "120px", marginTop: "29px", width: "45px", height: "21px", flexShrink: 0 }} />
+        <span className="header-gdsc">
           GDSC 
-        </div>
+        </span>
 
-        <div className="header-konkuk-univ">
-          Konkuk Univ
-        </div>
+        <span className="header-konkuk-univ">
+          Konkuk Univ.
+        </span>
       </div>
 
       <nav className="nav-bar">
