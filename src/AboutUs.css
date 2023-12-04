@@ -1,0 +1,47 @@
+.AboutUs {
+    display: flex;
+
+}
+  
+  .text-AboutUs {
+    width: 95px;
+    height: 26px;
+    margin: 196px 7px 30px 222px;
+    font-family: Pretendard;
+    font-size: 22px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4285f4;
+  }
+  
+  .keycap {
+    width: 282px;
+    height: 282px;
+    margin: 30px 10px 84px 222px;
+    object-fit: contain;
+  }
+  
+
+
+
+  .GDSC-Konkuk-Univ- {
+    width: 588px;
+    height: 112px;
+    margin: 115px 246px 169px 102px;
+    font-family: Pretendard;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: left;
+    color: #171717;
+  }
+  .GDSC-Konkuk-Univ- .text-style-1 {
+    font-weight: 600;
+  }
