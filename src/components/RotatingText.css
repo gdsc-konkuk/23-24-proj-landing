@@ -1,1 +1,33 @@
-/* 애니메이션 추가 */
+@keyframes highlight {
+    0% { background: transparent; }
+    25%, 100% { background: rgb(170, 202, 255); }
+
+  }
+  
+  .hl-1 {
+    animation: highlight 4s 0s infinite;
+  }
+  
+  .hl-2 {
+    animation: highlight 3.5s 0.5s infinite;
+  }
+  
+  .hl-3 {
+    animation: highlight 3s 1s infinite;
+  }
+  
+  .hl-4 {
+    animation: highlight 2.5s 1.5s infinite;
+  }
+  
+  .hl-5 {
+    animation: highlight 2s 2s infinite;
+  }
+  
+  .hl-6 {
+    animation: highlight 1.5s 2.5s infinite;
+  }
+  
+  .hl-7 {
+    animation: highlight 1s 3s infinite;
+  }

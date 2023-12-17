@@ -11,8 +11,17 @@ export default function RotatingText() {
     <ul className="list-none font-bold">
       <li>Together,</li>
       <li>Learn,</li>
-      <li>Connect</li>
+      <li>
+        <span class="hl-1">C</span>
+        <span class="hl-2">o</span>
+        <span class="hl-3">n</span>
+        <span class="hl-4">n</span>
+        <span class="hl-5">e</span>
+        <span class="hl-6">c</span>
+        <span class="hl-7">t</span>
+      </li>
     </ul>
+    
   </div>
 
   <div className="relative w-[442px] h-[442px] mr-56 flex justify-center items-center ml-96">
