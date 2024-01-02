@@ -1,64 +1,33 @@
-.RotatingText{
-  margin-top: 10px;
-}
+@keyframes highlight {
+    0% { background: transparent; }
+    25%, 100% { background: rgb(170, 202, 255); }
 
-.text ul {
-    color: #171717;
-    font-family: Pretendard;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 100px;
-    margin-left: 222px;
-    list-style-type: none;
-    margin-top: 100px;
   }
   
-  .Rotation {
-    position: absolute; /* 페이지 우측에 위치하도록 설정 */
-    right: 0;
-    width: 442px;
-    height: 442px;
-    margin-right: 222px;
-    
-    
+  .hl-1 {
+    animation: highlight 4s 0s infinite;
   }
   
-  .Rotation img {
-    position: absolute;
-    top: 0;
-    right: 183px;  
-    transform-origin:  center; 
-    transform: translate(-50%, -50%);
-    max-width: 100%;
-    height: auto;
-}
-
-  .large {
-    animation: spin 10s infinite linear;
-    width: 442px;
-    height: 442px;
-    flex-shrink: 0;
+  .hl-2 {
+    animation: highlight 3.5s 0.5s infinite;
   }
   
-  .mid {
-    animation: spin 100s infinite linear;
-    width: 244.588px;
-    height: 255.162px;
-    flex-shrink: 0;
+  .hl-3 {
+    animation: highlight 3s 1s infinite;
   }
   
-  .gray {
-    width: 85.748px;
-    height: 41.106px;
-    flex-shrink: 0;   
+  .hl-4 {
+    animation: highlight 2.5s 1.5s infinite;
   }
   
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  .hl-5 {
+    animation: highlight 2s 2s infinite;
   }
   
-  .Rotation img {
-       animation: spin 4s linear infinite; /* animation applied to the <img> tags */
-    }
+  .hl-6 {
+    animation: highlight 1.5s 2.5s infinite;
+  }
+  
+  .hl-7 {
+    animation: highlight 1s 3s infinite;
+  }
