@@ -11,7 +11,7 @@ export default function Header() {
           className="w-11 h-5"
         />
         <span className="text-2xl font-bold noto-sans-kr">GDSC</span>
-        <span className="text-base text-gray-400 pretendard">Konkuk Univ.</span>
+        <span className="text-base text-gray-400 font-pretendard">Konkuk Univ.</span>
       </div>
 
       <nav className="flex items-center space-x-24  mt-8 mr-40">
