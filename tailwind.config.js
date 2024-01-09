@@ -3,8 +3,8 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
-      padding: {
-        "10p": "10%",
+      fontFamily: {
+        pretendard: ["Pretendard", "sans-serif"],
       },
     },
   },
