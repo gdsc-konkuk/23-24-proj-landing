@@ -4,13 +4,11 @@ import React from "react";
 import Video_NotionPage from "../assets/NotionPage/Video_NotionPage.MOV";
 import Desktop_blank_frame from "../assets/images/Desktop_blank_frame.png";
 
-
 export default function Footer() {
   return (
     <footer>
-
       {/* *********** <InGdsc> Component *********** */}
-        <div className="text-center">
+      {/* <div className="text-center">
           
           <p className="text-6xl font-bold noto-sans-kr">In GDSC</p>
           <p className="mt-6 font-pretendard">"이 모든 도전과 성장을 함께하는"</p>
@@ -35,34 +33,25 @@ export default function Footer() {
           </div>
 
           
-        </div>
+        </div> */}
       {/* *********** <InGdsc> Component *********** */}
-
-
-
-
 
       {/* *********** <Footer> Component *********** */}
 
-      <div className="relative">
+      <div className="">
         <div className="absolute border-t border-dashed border-gray-900 w-full h-px bottom-56 md:bottom-56"></div>
         <div className="absolute text-gray-900 font-light leading-6 tracking-wider whitespace-pre-line bottom-0 md:bottom-28 ml-32 w-full">
-        <p >
-            <p>
-              Designed by. Yeowon Kim, Chaerin Kim
-            </p>
-            <p>
-            Developed by. Jeongmin Seon, Jimin Lee
-            </p>
+          <p>
+            <p>Designed by. Yeowon Kim, Chaerin Kim</p>
+            <p>Developed by. Jeongmin Seon, Jimin Lee</p>
             <p>
               @2023-2024 Google Developer Student Clubs Konkuk University. All
-            rights reserved.
+              rights reserved.
             </p>
           </p>
         </div>
       </div>
-     {/* *********** <Footer> Component *********** */}
-
+      {/* *********** <Footer> Component *********** */}
     </footer>
   );
 }
