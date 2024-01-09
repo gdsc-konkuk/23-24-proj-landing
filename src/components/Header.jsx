@@ -1,6 +1,5 @@
 import React from "react";
 import GDSC_Symbol from "../assets/images/GDSC_Symbol.png";
-import "./Header.css";
 
 export default function Header() {
   return (
