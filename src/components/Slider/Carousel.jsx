@@ -57,21 +57,21 @@ export default function Carousel({ carouselList }) {
   const carouselRef = useRef(null);
 
   return (
-    <div class="flex items-center justify-center w-full group">
+    <div className="flex items-center  w-full group">
       <button
-        class="absolute hidden left-10 top-3/5 z-10 group-hover:block"
+        className="absolute hidden left-10 top-3/5 z-10 group-hover:block"
         onClick={() => handleSwipe(-1)}
       >
         <img src={LeftArrow} alt="LeftArrow" />
       </button>
       <button
-        class="absolute hidden right-10 top-3/5 z-10 group-hover:block"
+        className="absolute hidden right-10 top-3/5 z-10 group-hover:block"
         onClick={() => handleSwipe(1)}
       >
         <img src={RightArrow} alt="RightArrow" />
       </button>
-      <div class="w-full overflow-hidden">
-        <div ref={carouselRef} class="flex  whitespace-nowrap z-1">
+      <div className="w-full overflow-hidden">
+        <div ref={carouselRef} className="flex whitespace-nowrap z-1">
           {currList?.map((item, idx) => {
             // const key = `${image}-${idx}`;
 
