@@ -1,7 +1,7 @@
 import React from "react";
 
 //import InGdsc assets
-import Video_NotionPage from "../assets/NotionPage/Video_NotionPage.MOV";
+import GIF_NotionPage from "../assets/NotionPage/GIF_NotionPage.gif";
 import Desktop_blank_frame from "../assets/images/Desktop_blank_frame.png";
 
 
@@ -30,7 +30,7 @@ export default function Footer() {
           <div className="flex justify-center items-center">
             <div style={{ position: "relative" }}>
               <img src={Desktop_blank_frame} alt="Desktop_blank_frame" className="w-[62.25rem] h-[37.55rem] mt-16 mx-auto" />
-              <video src={Video_NotionPage} alt="Video_NotionPage" loop autoPlay muted className="w-[62.25rem] h-[37.55rem] mt-16 mx-auto" style={{ position: "absolute", top: 40, left: 0 }}></video>
+              <video src={GIF_NotionPage} alt="GIF_NotionPage" loop autoPlay muted className="w-[62.25rem] h-[37.55rem] mt-16 mx-auto" style={{ position: "absolute", top: 40, left: 0 }}></video>
             </div>
           </div>
 
