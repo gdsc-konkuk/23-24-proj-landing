@@ -16,29 +16,46 @@ export default function Main() {
     <>
       <RotatingText />
       <AboutUs />
-      <Slider />
+      <div className="justify-center flex">
+        <Slider />
+      </div>
       {/* InGdsc를 넣으면 localhost:3000 무한 로딩되는 에러가 있음 */}
       <InGdsc />
-      <div className="flex justify-center items-center">
-        <div style={{ position: "relative" }}>
-          <img
-            src={Desktop_blank_frame}
-            alt="Desktop_blank_frame"
-            className="w-[62.25rem] h-[37.55rem] mt-16 mx-auto"
-          />
-          <video
-            src={Video_NotionPage}
-            alt="Video_NotionPage"
-            loop
-            autoPlay
-            muted
-            className="w-[62.25rem] h-[37.55rem] mt-16 mx-auto"
-            style={{ position: "absolute", top: 40, left: 0 }}
-          ></video>
+      <div className="relative">
+        <div className="flex relative justify-center items-center">
+          <div style={{ position: "relative" }}>
+            <img
+              src={Desktop_blank_frame}
+              alt="Desktop_blank_frame"
+              className="w-[996px] h-[600px] mt-16 mx-auto"
+            />
+            <video
+              src={Video_NotionPage}
+              alt="Video_NotionPage"
+              loop
+              autoPlay
+              muted
+              className="w-[996px] h-[600px] mt-16 mx-auto "
+              style={{ position: "absolute", top: 40, left: 0 }}
+            ></video>
+          </div>
         </div>
-      </div>
-      <div className="justify-center items-center">
-        <img src={gdsc_logo} alt="gdsc_logo" className="z-10 justify-center" />
+        <div className=" mx-auto">
+          <section className="mx-auto">
+            <div className="bg-black w-[100px] h-[100px] rounded-full flex justify-center items-center">
+              <img
+                src={gdsc_logo}
+                alt="gdsc_logo"
+                className=" w-[59px] h-[29px]"
+              />
+            </div>
+          </section>
+          <p>GDSC Konkuk Univ.</p>
+          <p>
+            더 나은 세상을 위한 한 걸음에 보탬이 될 수 있도록 <br />
+            GDSC Konkuk과 함께 해요!
+          </p>
+        </div>
       </div>
     </>
   );
