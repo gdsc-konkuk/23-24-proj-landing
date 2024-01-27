@@ -1,7 +1,6 @@
 import React from "react";
 
 //import InGdsc assets
-import Desktop_blank_frame from "../assets/images/Desktop_blank_frame.png";
 
 export default function Footer() {
   return (
