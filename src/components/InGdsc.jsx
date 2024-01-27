@@ -27,6 +27,7 @@ export default function InGdsc() {
               </span>
             </div>
           </div>
+
           <div className="flex justify-center items-center space-x-2">
             <div className="w-24 h-8 rounded-[1.234375rem] border border-solid">
               <span className="text-base font-pretendard w-24 h-8 font-bold ">
@@ -37,6 +38,7 @@ export default function InGdsc() {
               <span className="text-base font-pretendard text-green-500 w-24 h-8 font-bold ">
                 #KonKuk
               </span>
+
             </div>
           </div>
         </div>

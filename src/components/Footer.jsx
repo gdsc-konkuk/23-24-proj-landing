@@ -1,6 +1,5 @@
 import React from "react";
 
-//import InGdsc assets
 
 export default function Footer() {
   return (
