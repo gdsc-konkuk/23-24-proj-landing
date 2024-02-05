@@ -7,6 +7,8 @@ import Desktop_blank_frame from "../assets/images/Desktop_blank_frame.png";
 import gdsc_logo from "../assets/images/gdsc_logo.svg";
 import TryGdsc from "../components/TryGdsc";
 import Video_NotionPage from "../assets/NotionPage/Video_NotionPage.MOV";
+import Video_Sequence from "../assets/videos/Sequence 01.mp4";
+import Video_Timeline from "../assets/videos/Sequence 02.mp4";
 
 // InGdsc를 넣으면 localhost:3000 무한 로딩되는 에러가 있음
 // import InGdsc from "../components/InGdsc";
@@ -14,8 +16,10 @@ import Video_NotionPage from "../assets/NotionPage/Video_NotionPage.MOV";
 export default function Main() {
   return (
     <>
+      <video src={Video_Sequence} alt="Video_Sequence" autoPlay muted />
       <RotatingText />
       <AboutUs />
+      <video src={Video_Timeline} alt="Video_Timeline" autoPlay muted />
       <div className="justify-center flex">
         <Slider />
       </div>
