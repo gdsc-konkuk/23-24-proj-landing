@@ -1,0 +1,67 @@
+import React from "react";
+// import Carousel from "./Carousel";
+import Slider from "react-slick";
+import CarouselItem from "../Slide/CarouselItem";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import FirstSessionImage from "../../assets/images/slides/1st_session.jpeg";
+import SecondSessionImage from "../../assets/images/slides/2nd_session.jpeg";
+import ThirdSessionImage from "../../assets/images/slides/3rd_session.png";
+
+const CAROSEL_IMAGES = [
+  { image: FirstSessionImage, text: "Gen AI" },
+  { image: SecondSessionImage, text: "Let's Git it" },
+  { image: ThirdSessionImage, text: "파트별 노션 꾸미기" },
+];
+
+export default function Slide() {
+  const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 3,
+    speed: 500,
+  };
+
+  return (
+    <div>
+      <div className="text-center">
+        <h3 className="text-[54px] font-semibold">Grow With GDSC</h3>
+        <h4 className="text-[20px] font-semibold">
+          "열정을 갖고 성장을 목표로"
+        </h4>
+        <span className="mb-8">
+          GDSC Konkuk에서는 정기적으로 세션을 통해
+          <br /> 함께 성장해 나가는 기회를 만들고자 해요.
+        </span>
+        {/* 라이브러리 없이 사용 */}
+        {/* <Carousel carouselList={CAROSEL_IMAGES} /> */}
+        {/* 라이브러리 이용 */}
+        <div className="slider-container">
+          <Slider {...settings}>
+            <div>
+              <h3>1</h3>
+            </div>
+            <div>
+              <h3>2</h3>
+            </div>
+            <div>
+              <h3>3</h3>
+            </div>
+            <div>
+              <h3>4</h3>
+            </div>
+            <div>
+              <h3>5</h3>
+            </div>
+            <div>
+              <h3>6</h3>
+            </div>
+          </Slider>
+        </div>
+      </div>
+    </div>
+  );
+}

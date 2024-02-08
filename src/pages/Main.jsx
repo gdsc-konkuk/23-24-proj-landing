@@ -1,7 +1,7 @@
 import React from "react";
 import RotatingText from "../components/RotatingText";
 import AboutUs from "../components/AboutUs";
-import Slider from "../components/Slider/Slider";
+import Slide from "../components/Slide/Slide";
 import InGdsc from "../components/InGdsc";
 import Desktop_blank_frame from "../assets/images/Desktop_blank_frame.png";
 import gdsc_logo from "../assets/images/gdsc_logo.svg";
@@ -16,12 +16,24 @@ import Video_Timeline from "../assets/videos/Sequence 02.mp4";
 export default function Main() {
   return (
     <>
-      <video src={Video_Sequence} alt="Video_Sequence" autoPlay muted />
+      <video
+        src={Video_Sequence}
+        className="h-[1100px] mx-auto"
+        alt="Video_Sequence"
+        autoPlay
+        muted
+      />
       <RotatingText />
       <AboutUs />
-      <video src={Video_Timeline} alt="Video_Timeline" autoPlay muted />
+      <video
+        src={Video_Timeline}
+        className="mt-20 mx-auto"
+        alt="Video_Timeline"
+        autoPlay
+        muted
+      />
       <div className="justify-center flex">
-        <Slider />
+        <Slide />
       </div>
       {/* InGdsc를 넣으면 localhost:3000 무한 로딩되는 에러가 있음 */}
       <TryGdsc />
