@@ -4,9 +4,9 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="mt-20">
       <div className="border-t border-dashed border-gray-900 w-full h-px bottom-56 md:bottom-56"></div>
-      <div className="text-gray-900 font-light leading-6 tracking-wider whitespace-pre-line bottom-0 md:bottom-28 ml-32 w-full">
+      <div className="text-gray-900 font-light leading-6 tracking-wider whitespace-pre-line bottom-0 md:bottom-28 w-full px-20">
         <p className="py-10">
           <p>Designed by. Yeowon Kim, Chaerin Kim</p>
           <p>Developed by. Jeongmin Seon, Jimin Lee</p>

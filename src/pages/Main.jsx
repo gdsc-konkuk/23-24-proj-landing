@@ -27,7 +27,7 @@ export default function Main() {
       <AboutUs />
       <video
         src={Video_Timeline}
-        className="mt-20 mx-auto"
+        className="mt-[120px] mx-auto"
         alt="Video_Timeline"
         autoPlay
         muted
@@ -35,16 +35,15 @@ export default function Main() {
       <div className="justify-center flex">
         <Slide />
       </div>
-      {/* InGdsc를 넣으면 localhost:3000 무한 로딩되는 에러가 있음 */}
       <TryGdsc />
       <InGdsc />
-      <div className="relative">
-        <div className="flex relative justify-center items-center">
+      <div className="relative bg-gradient-to-b from-transparent to-indigo-100 z-[-1] top-10">
+        <div className="flex relative justify-center items-center flex-shrink-0">
           <div style={{ position: "relative" }}>
             <img
               src={Desktop_blank_frame}
               alt="Desktop_blank_frame"
-              className="w-[996px] h-[600px] mt-16 mx-auto"
+              className="w-[996px] h-[600px] mt-16 mx-auto flex-shrink-0"
             />
             <video
               src={Video_NotionPage}
@@ -52,25 +51,41 @@ export default function Main() {
               loop
               autoPlay
               muted
-              className="w-[996px] h-[600px] mt-16 mx-auto z-[-1]"
-              style={{ position: "absolute", top: 40, left: 0 }}
+              className="w-[996px] h-[600px] absolute mt-16 mx-auto z-[-1] flex-shrink-0"
+              style={{
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+              }} // 중앙 정렬
             ></video>
           </div>
         </div>
-        <div className="bg-black w-[100px] h-[100px] rounded-full flex justify-center items-center mx-auto">
-          <img src={gdsc_logo} alt="gdsc_logo" className=" w-[59px] h-[29px]" />
-        </div>
-
-        <section className="bg-white z-10 w-full flex justify-center">
-          <div className="text-center">
-            <h3 className="font-semibold text-[54px]">GDSC Konkuk Univ.</h3>
-            <p className="text-xl">
-              더 나은 세상을 위한 한 걸음에 보탬이 될 수 있도록 <br />
-              GDSC Konkuk과 함께 해요!
-            </p>
+        <div className="relative w-full bg-white">
+          <div
+            className="bg-black w-[100px] h-[100px] rounded-full flex justify-center items-center mx-auto"
+            style={{
+              bottom: "20%",
+              left: "50%",
+              transform: "translateY(-50%)",
+            }}
+          >
+            <img
+              src={gdsc_logo}
+              alt="gdsc_logo"
+              className="w-[59px] h-[29px]"
+            />
           </div>
-        </section>
+        </div>
       </div>
+      <section className="bg-white z-10 w-full flex justify-center mt-5">
+        <div className="text-center">
+          <h3 className="font-semibold text-[54px]">GDSC Konkuk Univ.</h3>
+          <p className="text-xl">
+            더 나은 세상을 위한 한 걸음에 보탬이 될 수 있도록 <br />
+            GDSC Konkuk과 함께 해요!
+          </p>
+        </div>
+      </section>
     </>
   );
 }

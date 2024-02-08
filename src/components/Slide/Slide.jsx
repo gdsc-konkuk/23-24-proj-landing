@@ -2,27 +2,24 @@ import React from "react";
 // import Carousel from "./Carousel";
 import Slider from "react-slick";
 import CarouselItem from "../Slide/CarouselItem";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import FirstSessionImage from "../../assets/images/slides/1st_session.jpeg";
 import SecondSessionImage from "../../assets/images/slides/2nd_session.jpeg";
 import ThirdSessionImage from "../../assets/images/slides/3rd_session.png";
 
-const CAROSEL_IMAGES = [
+const CAROUSEL_IMAGES = [
   { image: FirstSessionImage, text: "Gen AI" },
   { image: SecondSessionImage, text: "Let's Git it" },
   { image: ThirdSessionImage, text: "파트별 노션 꾸미기" },
 ];
 
 export default function Slide() {
-  const settings = {
-    className: "center",
-    centerMode: true,
+  var settings = {
+    dots: true,
     infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 3,
     speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   };
 
   return (
@@ -39,28 +36,13 @@ export default function Slide() {
         {/* 라이브러리 없이 사용 */}
         {/* <Carousel carouselList={CAROSEL_IMAGES} /> */}
         {/* 라이브러리 이용 */}
-        <div className="slider-container">
-          <Slider {...settings}>
+        <Slider {...settings}>
+          {CAROUSEL_IMAGES.map((item) => (
             <div>
-              <h3>1</h3>
+              <p>ㅆㄸㄴㅅ</p>
             </div>
-            <div>
-              <h3>2</h3>
-            </div>
-            <div>
-              <h3>3</h3>
-            </div>
-            <div>
-              <h3>4</h3>
-            </div>
-            <div>
-              <h3>5</h3>
-            </div>
-            <div>
-              <h3>6</h3>
-            </div>
-          </Slider>
-        </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );
