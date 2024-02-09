@@ -6,6 +6,7 @@ import CarouselItem from "../Slide/CarouselItem";
 import FirstSessionImage from "../../assets/images/slides/1st_session.jpeg";
 import SecondSessionImage from "../../assets/images/slides/2nd_session.jpeg";
 import ThirdSessionImage from "../../assets/images/slides/3rd_session.png";
+import Card from "./Card";
 
 const CAROUSEL_IMAGES = [
   { image: FirstSessionImage, text: "Gen AI" },
@@ -38,9 +39,7 @@ export default function Slide() {
         {/* 라이브러리 이용 */}
         <Slider {...settings}>
           {CAROUSEL_IMAGES.map((item) => (
-            <div>
-              <p>ㅆㄸㄴㅅ</p>
-            </div>
+            <Card image={item.image} text={item.text} />
           ))}
         </Slider>
       </div>

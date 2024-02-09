@@ -18,7 +18,7 @@ export default function Main() {
     <>
       <video
         src={Video_Sequence}
-        className="h-[1100px] mx-auto"
+        className="h-[1100px] mx-auto min-w-[900px]"
         alt="Video_Sequence"
         autoPlay
         muted
@@ -43,7 +43,7 @@ export default function Main() {
             <img
               src={Desktop_blank_frame}
               alt="Desktop_blank_frame"
-              className="w-[996px] h-[600px] mt-16 mx-auto flex-shrink-0"
+              className="w-[996px] h-[600px] mt-16 mx-auto flex-shrink-0 min-w-[950px]"
             />
             <video
               src={Video_NotionPage}
@@ -51,7 +51,7 @@ export default function Main() {
               loop
               autoPlay
               muted
-              className="w-[996px] h-[600px] absolute mt-16 mx-auto z-[-1] flex-shrink-0"
+              className="w-[996px] h-[600px] absolute mt-16 mx-auto z-[-1] flex-shrink-0 min-w-[950px]"
               style={{
                 top: "50%",
                 left: "50%",

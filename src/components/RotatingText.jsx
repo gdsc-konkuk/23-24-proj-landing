@@ -25,17 +25,17 @@ export default function RotatingText() {
 
       <div className="relative w-[442px] h-[442px] mr-48 flex justify-center items-center ml-96 flex-shrink-0">
         <img
-          className="absolute animate-spin-slow w-[392px] h-[392px]"
+          className="absolute animate-spin-slow w-[392px] h-[392px] z-[-1]"
           src={TLC_large}
           alt="TLC_large"
         />
         <img
-          className="absolute animate-spin-slow w-[244.588px] h-[255.162px]"
+          className="absolute animate-spin-slow w-[244.588px] h-[255.162px] z-[-1]"
           src={TLC_mid}
           alt="TLC_mid"
         />
         <img
-          className="absolute w-[85.748px] h-[41.106px]"
+          className="absolute w-[85.748px] h-[41.106px] z-[-1]"
           src={GDSC_Symbol_gray}
           alt="GDSC Symbol Gray"
         />
