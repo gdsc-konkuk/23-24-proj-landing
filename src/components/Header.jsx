@@ -1,27 +1,36 @@
 import React from "react";
 import GDSC_Symbol from "../assets/images/GDSC_Symbol.png";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <header className="flex justify-between">
-      <div className="flex items-center space-x-3 cursor-pointer pt-7 pl-40">
+    <header className="flex fixed justify-between min-w-[900px] backdrop-blur-md z-50 w-full px-10 py-6">
+      <Link to="/" className="flex gap-3 items-center">
         <img
           src={GDSC_Symbol}
           alt="GDSC Symbol"
-          className="w-11 h-5"
+          className="w-11 h-5  cursor-pointer"
         />
-        <span className="text-2xl font-bold noto-sans-kr">GDSC</span>
-        <span className="text-base text-gray-400 font-pretendard">Konkuk Univ.</span>
-      </div>
+        <span className="text-2xl font-bold">GDSC</span>
+        <span className="text-base text-gray-400 ">Konkuk Univ.</span>
+      </Link>
 
-      <nav className="flex items-center space-x-24  mt-8 mr-40">
-        <ul className="flex space-x-24 list-none">
-          <li className="cursor-pointer">Member</li>
-          <li className="cursor-pointer">Program</li>
-          <li className="cursor-pointer">Recruitment</li>
-          <li className="cursor-pointer">Blog</li>
-          <li className="cursor-pointer">FAQ</li>
-        </ul>
+      <nav className="flex items-center gap-x-16">
+        <Link to="/" className="cursor-pointer text-lg font-medium">
+          Member
+        </Link>
+        <Link to="/" className="cursor-pointer text-lg font-medium">
+          Program
+        </Link>
+        <Link to="/" className="cursor-pointer text-lg font-medium">
+          Recruitment
+        </Link>
+        <Link to="/" className="cursor-pointer text-lg font-medium">
+          Blog
+        </Link>
+        <Link to="/" className="cursor-pointer text-lg font-medium">
+          FAQ
+        </Link>
       </nav>
     </header>
   );

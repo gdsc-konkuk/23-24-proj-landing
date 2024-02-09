@@ -17,7 +17,7 @@ export default function TryGdsc() {
       </div>
 
       <section className="grid grid-rows-4 gap-4 mt-12 justify-center align-center">
-        <div className="relative w-[486px] h-[304px]  row-start-1 row-end-3 group">
+        <div className="relative w-[486px] h-[304px]  row-start-1 row-end-3 group ">
           <img
             className="object-cover w-full h-full rounded-[20px] flex-shrink-0"
             src={GatheringImg}
@@ -38,7 +38,8 @@ export default function TryGdsc() {
             </p>
           </div>
         </div>
-        <div className="relative w-[486px] h-[316px] row-start-2 row-end-4 group">
+
+        <div className="relative w-[486px] h-[316px] row-start-2 row-end-4 group ">
           <img
             className="object-cover w-full h-full rounded-[20px] flex-shrink-0"
             src={StudyImg}
@@ -60,7 +61,7 @@ export default function TryGdsc() {
           </div>
         </div>
 
-        <div className="relative w-[384px] h-[231px] row-start-3 row-end-5 justify-self-end group">
+        <div className="relative w-[384px] h-[231px] row-start-3 row-end-5 justify-self-end group ">
           <img
             className="object-cover w-full h-full rounded-[20px] flex-shrink-0"
             src={ChallengeImg}

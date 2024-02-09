@@ -1,33 +1,43 @@
 @keyframes highlight {
-    0% { background: transparent; }
-    25%, 100% { background: rgb(170, 202, 255); }
+  0%,
+  100% {
+    background: transparent;
+  }
+  50% {
+    background: rgb(170, 202, 255);
+  } /* 형광펜 효과 색상 */
+}
 
-  }
-  
-  .hl-1 {
-    animation: highlight 4s 0s infinite;
-  }
-  
-  .hl-2 {
-    animation: highlight 3.5s 0.5s infinite;
-  }
-  
-  .hl-3 {
-    animation: highlight 3s 1s infinite;
-  }
-  
-  .hl-4 {
-    animation: highlight 2.5s 1.5s infinite;
-  }
-  
-  .hl-5 {
-    animation: highlight 2s 2s infinite;
-  }
-  
-  .hl-6 {
-    animation: highlight 1.5s 2.5s infinite;
-  }
-  
-  .hl-7 {
-    animation: highlight 1s 3s infinite;
-  }
+.hl-1,
+.hl-2,
+.hl-3,
+.hl-4,
+.hl-5,
+.hl-6,
+.hl-7 {
+  display: inline; /* 각 span이 인라인 요소로 표시되도록 설정 */
+  animation: highlight 2s infinite; /* 2초 동안 무한 반복 */
+}
+
+/* 각 클래스별로 애니메이션 시작 지연 시간을 다르게 설정 */
+.hl-1 {
+  animation-delay: 0s;
+}
+.hl-2 {
+  animation-delay: 0.3s;
+}
+.hl-3 {
+  animation-delay: 0.6s;
+}
+.hl-4 {
+  animation-delay: 0.9s;
+}
+.hl-5 {
+  animation-delay: 1.2s;
+}
+.hl-6 {
+  animation-delay: 1.5s;
+}
+.hl-7 {
+  animation-delay: 1.8s;
+}
