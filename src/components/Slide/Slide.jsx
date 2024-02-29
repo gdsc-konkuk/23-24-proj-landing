@@ -1,8 +1,8 @@
 import React from "react";
 // import Carousel from "./Carousel";
 import Slider from "react-slick";
-import CarouselItem from "../Slide/CarouselItem";
 
+import "slick-carousel/slick/slick.css";
 import FirstSessionImage from "../../assets/images/slides/1st_session.jpeg";
 import SecondSessionImage from "../../assets/images/slides/2nd_session.jpeg";
 import ThirdSessionImage from "../../assets/images/slides/3rd_session.png";
@@ -19,7 +19,7 @@ export default function Slide() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
   };
 
@@ -38,9 +38,19 @@ export default function Slide() {
         {/* <Carousel carouselList={CAROSEL_IMAGES} /> */}
         {/* 라이브러리 이용 */}
         <Slider {...settings}>
-          {CAROUSEL_IMAGES.map((item) => (
+          {/* {CAROUSEL_IMAGES.map((item) => (
             <Card image={item.image} text={item.text} />
-          ))}
+          ))} */}
+<div>
+        <h3>1</h3>
+      </div>
+      <div>
+        <h3>2</h3>
+      </div>
+      <div>
+        <h3>3</h3>
+      </div>
+
         </Slider>
       </div>
     </div>
