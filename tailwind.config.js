@@ -12,6 +12,13 @@ module.exports = {
       animation: {
         "spin-slow": "spin 20s linear infinite",
       },
+      minWidth: {
+        custom: "588px",
+        slideWidth: "1070px",
+      },
+      minHeight: {
+        custom: "426px",
+      },
     },
   },
   plugins: [],
