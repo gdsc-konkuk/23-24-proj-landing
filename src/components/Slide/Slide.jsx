@@ -18,22 +18,6 @@ const CAROUSEL_IMAGES = [
   { image: ThirdSessionImage, text: "파트별 노션 꾸미기" },
 ];
 
-const PreviousBtn = (props) => {
-  console.log(props);
-  const { className, onClick, style } = props;
-  return (
-    <div
-      className={className}
-      onClick={onClick}
-      style={{ ...style, dipslay: "block" }}
-    ></div>
-  );
-};
-
-const NextBtn = (props) => {
-  console.log(props);
-};
-
 export default function Slide() {
   const slickRef = useRef(null);
 
@@ -41,8 +25,6 @@ export default function Slide() {
   const next = useCallback(() => slickRef.current.slickNext(), []);
 
   const settings = {
-    prevArrow: <PreviousBtn />,
-    nextArrow: <NextBtn />,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -60,12 +42,26 @@ export default function Slide() {
           GDSC Konkuk에서는 정기적으로 세션을 통해
           <br /> 함께 성장해 나가는 기회를 만들고자 해요.
         </span>
-        <div className='slider-container min-w-slideWidth'>
-          <Slider {...settings} className='mt-10' ref={slickRef}>
-            {CAROUSEL_IMAGES.map((item) => (
-              <CarouselItem image={item.image} text={item.text} />
-            ))}
-          </Slider>
+        <div className='relative slider-container min-w-slideWidth z-[-1] group'>
+          <div>
+            <Slider {...settings} className='mt-10' ref={slickRef}>
+              {CAROUSEL_IMAGES.map((item) => (
+                <CarouselItem image={item.image} text={item.text} />
+              ))}
+            </Slider>
+          </div>
+          <div
+            className='absolute top-0 left-0 z-10 bg-black'
+            onClick={previous}
+          >
+            <img src={PrevArrow} />
+          </div>
+          <div
+            className='absolute right-0 right-0 z-10 bg-black'
+            onClick={next}
+          >
+            <img src={NextArrow} />
+          </div>
         </div>
       </div>
     </div>
