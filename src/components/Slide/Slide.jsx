@@ -51,11 +51,11 @@ export default function Slide() {
             </Slider>
           </div>
           <div className='absolute top-1/2 left-2 z-10' onClick={previous}>
-            <img src={PrevArrow} />
+            <img src={PrevArrow} alt='PrevArrow' />
             {/* <FaArrowLeft color='black' fontSize='1.8rem' /> */}
           </div>
           <div className='absolute right-5 top-1/2 z-10' onClick={next}>
-            <img src={NextArrow} />
+            <img src={NextArrow} alt='NextArrow' />
           </div>
         </div>
       </div>
