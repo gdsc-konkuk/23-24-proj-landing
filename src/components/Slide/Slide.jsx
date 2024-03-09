@@ -8,8 +8,6 @@ import ThirdSessionImage from "../../assets/images/slides/3rd_session.png";
 import PrevArrow from "../../assets/images/slides/LeftArrow.png";
 import NextArrow from "../../assets/images/slides/RightArrow.png";
 import CarouselItem from "./CarouselItem";
-import { FaArrowLeft } from "react-icons/fa6";
-import { BiLeftArrow } from "react-icons/bi";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
