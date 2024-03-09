@@ -8,6 +8,8 @@ import ThirdSessionImage from "../../assets/images/slides/3rd_session.png";
 import PrevArrow from "../../assets/images/slides/LeftArrow.png";
 import NextArrow from "../../assets/images/slides/RightArrow.png";
 import CarouselItem from "./CarouselItem";
+import { FaArrowLeft } from "react-icons/fa6";
+import { BiLeftArrow } from "react-icons/bi";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -42,24 +44,19 @@ export default function Slide() {
           GDSC Konkuk에서는 정기적으로 세션을 통해
           <br /> 함께 성장해 나가는 기회를 만들고자 해요.
         </span>
-        <div className='relative slider-container min-w-slideWidth z-[-1] group'>
-          <div>
+        <div className='relative slider-container min-w-slideWidth group'>
+          <div className='z-[-1]'>
             <Slider {...settings} className='mt-10' ref={slickRef}>
               {CAROUSEL_IMAGES.map((item) => (
                 <CarouselItem image={item.image} text={item.text} />
               ))}
             </Slider>
           </div>
-          <div
-            className='absolute top-0 left-0 z-10 bg-black'
-            onClick={previous}
-          >
+          <div className='absolute top-1/2 left-2 z-10' onClick={previous}>
             <img src={PrevArrow} />
+            {/* <FaArrowLeft color='black' fontSize='1.8rem' /> */}
           </div>
-          <div
-            className='absolute right-0 right-0 z-10 bg-black'
-            onClick={next}
-          >
+          <div className='absolute right-5 top-1/2 z-10' onClick={next}>
             <img src={NextArrow} />
           </div>
         </div>
