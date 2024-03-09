@@ -9,34 +9,11 @@ import TryGdsc from "../components/TryGdsc";
 import Video_NotionPage from "../assets/NotionPage/Video_NotionPage.MOV";
 import Video_Sequence from "../assets/videos/Sequence 01.mp4";
 import Video_Timeline from "../assets/videos/Sequence 02.mp4";
-import Slider from "react-slick";
-
-import FirstSessionImage from "../assets/images/slides/1st_session.jpeg";
-import SecondSessionImage from "../assets/images/slides/2nd_session.jpeg";
-import ThirdSessionImage from "../assets/images/slides/3rd_session.png";
-import CarouselItem from "../components/Slide/CarouselItem";
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-const CAROUSEL_IMAGES = [
-  { image: FirstSessionImage, text: "Gen AI" },
-  { image: SecondSessionImage, text: "Let's Git it" },
-  { image: ThirdSessionImage, text: "파트별 노션 꾸미기" },
-];
 
 // InGdsc를 넣으면 localhost:3000 무한 로딩되는 에러가 있음
 // import InGdsc from "../components/InGdsc";
 
 export default function Main() {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
   return (
     <>
       <video
