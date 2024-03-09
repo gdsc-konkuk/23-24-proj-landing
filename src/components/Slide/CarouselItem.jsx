@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CarouselItem({ image, text }) {
   return (
-    <div className={`relative object-cover mx-1`}>
+    <div className={`relative object-cover mx-1 m-w-md`}>
       <img
         src={image}
         alt='carousel-img'
